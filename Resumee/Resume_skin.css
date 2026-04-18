@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #18191a;
+  color: #ffffff;
+}
+/* COVER */
+.cover {
+  height: 300px;
+  background: url("blackbg.jpg") center / cover no-repeat;
+}
+/* PROFILE CARD */
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px; /* overlap cover */
+}
+.profile-card {
+  background: #242526;
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #0289f0;
+}
+.profile-buttons {
+  display: flex;
+  gap: 12px;          /* space between Add Friend, Github, and ... */
+  align-items: center;
+}
+/*react */
+.post {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  background: #272626;
+  padding: 1px;
+border-radius: 8px;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #62676d;
+  margin: 1px 0;
+  padding: 1px 0;
+}
+.actions button {
+  background: none;
+  border: none;
+  color: #b0b3b8;
+  font-size: 14px;
+  cursor: pointer;
+}
+.actions button:hover {
+  color: #0647e0;
+}
+.profile-info h1 {
+  margin: 0;
+}
+.subtitle {
+  color: #b0b3b8;
+}
+.bio {
+  margin-top: 10px;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+/* TWO COLUMN LAYOUT */
+.two-column {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+/* LEFT COLUMN */
+.left-column {
+  flex: .8;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-left: 10px;
+}
+.left-column section {
+  background: #262627;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+/* THINGS I DO – IMAGE HOLDER */
+.things-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+.thing-card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+.thing-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.thing-card p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #b0b3b8;
+}
+.thing-card:hover {
+  transform: translateY(-4px);
+  background: #2d2f31;
+}
+/* RIGHT COLUMN */
+.right-column {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px;
+}
+.right-column section {
+  background: #262627;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+/*link */
+.link-lineremove {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* same color as h2 */
+}
+.link-lineremove:hover {
+  text-decoration: underline; /* optional hover effect */
+}
+.post-image {
+  width: 500px;   /* Adjust width as needed */
+  height: auto;   /* Keep aspect ratio */
+  display: block; /* Optional: ensures proper spacing */
+  margin: 10px auto; /* Optional spacing */
+  border-radius: 8px; /* Optional rounded corners */
+}
+/* line2 */
+h2 {
+  border-bottom: 2px solid #7c818a;
+  padding-bottom: 10px;
+}
+/* margin line */
+ul {
+  line-height: 1.8;
+}
+/* CONTACT */
+#contact {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background: #000;
+  color: white;
+}
